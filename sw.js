@@ -1,2 +1,2 @@
-‘use strict’;
-importScripts(‘sw-toolbox.js’); toolbox.precache([“index.html”,”public/css/style.css”]); toolbox.router.get(‘public/img/*’, toolbox.cacheFirst); toolbox.router.get(‘/*’, toolbox.networkFirst, { networkTimeoutSeconds: 5});
+'use strict';
+importScripts('sw-toolbox.js'); toolbox.precache(['index.html','public/css/style.css']); toolbox.router.get('public/img/*', toolbox.cacheFirst); toolbox.router.get('/*', toolbox.networkFirst, { networkTimeoutSeconds: 5});
